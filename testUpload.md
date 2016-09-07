@@ -1,4 +1,4 @@
-#bi-cycle
-#ice-cycle
-#tri-cycle
+#bicycle
+#icicle
+#tricycle
 #test
