@@ -1,0 +1,7 @@
+CLIBS=		-lm
+CFLAGS=		-ansi
+
+lab04.exe:	main.cpp linkedlist.hpp linkedlist.cpp binarysearchtree.hpp binarysearchtree.cpp
+		gcc $(CFLAGS) main.cpp linkedlist.hpp linkedlist.cpp binarysearchtree.hpp 
+
+binarysearchtree.cpp -o lab04.exe $(CLIBS)
