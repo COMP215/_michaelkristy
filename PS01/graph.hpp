@@ -7,24 +7,22 @@ class Node {
 public:
 	std::string vertex;
 	std::vector<Node>edgeStore;
-  std::vector<Node>tempEdgeHolder;
 	std::vector<int>edgeWeight;
-  std::vector<int>tempEdgeWeightHolder;
+	std::vector<Node>ignoreVector;
 
 	Node();
 	void addNode(std::string notVertex);
 	void addEdge(Node passedNode, double weight);
 	void printVertex(std::ostream& myfile);
 	void printEdges(Node passedNode, int move, std::ostream& myfile);
-	std::string searchSmallestVertex();
-	int findWeight();
+	std::string searchSmallestVertex(std::vector<Node>ignoreVector);
+	int findWeight(std::vector<Node>ignoreVector);
 	std::string returnName();
-	void removeReconnectingEdge(int removeVal);
 };
 
 class Graph {
 public:
-	std::vector<Node>MASTER;
+	std::vector<Node>verticies_in_graph;
 
 	Graph();
 	void createVertex(std::string vertex);
@@ -32,5 +30,4 @@ public:
 	void ToGraphViz(std::string graphName);
 	void printVertexName(Node vertexNode, std::ostream& myfile);
 	void PrimMSTGen(Graph PrimMST);
-
 };

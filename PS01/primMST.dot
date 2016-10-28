@@ -1,0 +1,10 @@
+strict graph {
+	max -- michael
+	michael -- max
+	michael -- Armweak
+	michael -- DifficultProject
+	Armweak -- michael
+	Armweak -- LeblancyBlancDaDankyDank
+	LeblancyBlancDaDankyDank -- Armweak
+	DifficultProject -- michael
+}
